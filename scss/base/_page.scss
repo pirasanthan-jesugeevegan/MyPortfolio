@@ -1,11 +1,11 @@
 // Global styling for this template
 @import "./variables";
 body {
-    @include body-font;
+  font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: $primary !important;
-    background-color: $box-background;
+    color: $background;
+  background-color: $main-backgound;
     margin:0;
     padding:0;
     font-weight: 500;
@@ -104,7 +104,7 @@ textarea {
   line-height: 26px;
   font-weight: 500;
   border: 0;
-  color: #848484;
+  color: $text-area;
   border: 2px solid rgba(255,255,255,0.4);
   background: none;
   resize: none;
@@ -124,7 +124,7 @@ label {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #e0e0e0;
+  color: $p-text-color;
 }
 
 img.icon.hubsicon {
@@ -140,7 +140,7 @@ fieldset {
 }
 
 .box p {
-    color: #e0e0e0;
+    color: $p-text-color;
     font-size: x-large;
   }
   
@@ -161,7 +161,7 @@ fieldset {
     font-size: 30px;
     padding-bottom: 10px;
     display: inline-block;
-    color: #66FCF1;
+    color: $primary;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
@@ -172,20 +172,20 @@ fieldset {
   }
   
   .contact-list a {
-    color: #e0e0e0;
+    $p-text-color: #e0e0e0;
     text-decoration: none;
   }
   
   .contact-list a:hover {
-    color: #66FCF1 !important;
+    color: $primary !important;
   }
   .other-sections-wrapper section {
     margin-top: 80px;
   }
   .box {
     padding: 40px;
-    background:#181818;
-    color:#fff;
+    background:$box-background;
+    color:$h1-text-color;
     border-radius: 10px;
   }
   
