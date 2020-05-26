@@ -1,3 +1,29 @@
+ul.nav.navbar-nav {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.nav.navbar-nav span {
+  display: none;
+}
+
+ul.nav.navbar-nav li i {
+  font-size: 28px;
+}
+
+.cm-navigation-content ul li a {
+  position: relative;
+  display: block;
+  line-height: 20px;
+  padding: 19px 0 13px 0;
+  color: #686a6b;
+}
+
+.cm-navigation-content ul li a:hover {
+  color: #66FCF1;
+}
+
 .cm-navigation {
   width: 80px;
   max-width: 80px;
@@ -10,22 +36,6 @@
   text-align: center;
   z-index: 10000;
   background: #181818;
-}
-
-.custom-logo {
-  margin: 30px 0 70px;
-}
-
-.cm-navigation-content ul li a {
-  position: relative;
-  display: block;
-  line-height: 20px;
-  padding: 19px 0 13px 0;
-  color: #686a6b;
-}
-
-.cm-navigation-content ul li a:hover {
-  color: #9cbc68;
 }
 
 .cm-navigation-content ul li a:after, .cm-navigation-content ul li a:before {
@@ -53,7 +63,7 @@
   border: 5px solid transparent;
   margin-left: 0px;
   margin-bottom: -4px;
-  border-right-color: #9cbc68;
+  border-right-color: #66FCF1;
 }
 
 .cm-navigation-content ul li a:hover:before {
@@ -78,7 +88,7 @@
   color: #252525;
   margin-bottom: -19px;
   margin-left: 10px;
-  background: #9cbc68;
+  background: #66FCF1;
 }
 
 .cm-navigation-content ul li a:hover:after {
@@ -88,63 +98,6 @@
   transition-delay: 100ms;
   -webkit-transform: translateX(8px);
   transform: translateX(8px);
-}
-
-@media (max-width: 1024px) {
-  .cm-navigation {
-    width: 100%;
-    max-width: 100%;
-    height: 80px;
-    bottom: 0;
-    top: auto;
-  }
-  .cm-navigation-inner > div {
-    display: inline-block;
-  }
-  .cm-navigation-content {
-    float: right;
-  }
-  .cm-navigation-content ul li a {
-    padding: 15px 0;
-  }
-  .cm-navigation {
-    top: 0;
-    bottom: auto;
-  }
-  .cm-navigation-content {
-    display: none;
-  }
-  .navigation-header {
-    float: left;
-    padding: 0 20px;
-  }
-  .cm-navigation-content ul li a {
-    font-size: 13px;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaaaaa !important;
-  }
-}
-
-.cm-navigation-content ul li a:hover {
-  background: none;
-  color: #9cbc68 !important;
-}
-
-.cm-navigation-content {
-  display: block !important;
-  float: none;
-  right: -60%;
-  width: 60% !important;
-  position: fixed;
-  background: rgba(2, 2, 8, 0.85);
-  height: 100%;
-  overflow-y: auto;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-  top: 80px;
 }
 
 .site-wrapper {
