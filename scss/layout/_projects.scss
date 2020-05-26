@@ -1,0 +1,75 @@
+
+.cm-portfolio-item {
+    width: calc(33.33% - 10px);
+    margin-bottom:15px;
+  }
+  
+  .cm-portfolio-item a:after {
+    content: attr(data-caption);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .cm-portfolio-item a:hover:after {
+    opacity: 1;
+  }
+
+  .cm-portfolio-listing-wrapper {
+    clear: both;
+    width: 100%;
+  }
+  
+  .cm-portfolio-listing-wrapper {
+    clear: both;
+    width: 100%;
+  }
+
+  .service-icon {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .service-des {
+    overflow: hidden;
+  }
+  
+  .service-icon > i {
+    color: #66FCF1;
+    line-height: 1;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+  }
+  
+  .service-des h5 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 15px;
+  }
+  
+  .service-listing > div {
+    margin-bottom: 30px;
+  }  
+  .cm-portfolio-item a {
+    display: block;
+  }

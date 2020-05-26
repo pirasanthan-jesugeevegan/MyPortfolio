@@ -1,6 +1,21 @@
+@import url('//use.fontawesome.com/releases/v5.0.0/css/all.css');
+// Core variables and mixins
+@import "./base/mixins";
+@import "./base/page";
+@import "./base/variables";
+@import "./base/grid";
+
+// Global CSS
+@import "base/page";
+
+// Components
+@import "./components/buttons";
 @import "./components/navbar";
 
-.site-wrapper {
-    position: relative;
-    z-index: 99;
-  }
+// Layout
+@import "./layout/home";
+@import "./layout/footer";
+@import "./layout/modelBox";
+@import "./layout/projects";
+@import "./layout/social";
+

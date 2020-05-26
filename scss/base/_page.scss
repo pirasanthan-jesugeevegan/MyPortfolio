@@ -1,9 +1,10 @@
 // Global styling for this template
+@import "./variables";
 body {
     @include body-font;
     font-size: 14px;
     line-height: 1.42857143;
-    color: $background;
+    color: $primary !important;
     background-color: $box-background;
     margin:0;
     padding:0;
@@ -14,8 +15,247 @@ body {
   }
 
   a {
-  color: #66FCF1;
+  color: $primary;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
+}
+
+.site-wrapper {
+    position: relative;
+    z-index: 99;
+  }
+
+  .cm-site-wrapper-inner {
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+
+  @-webkit-keyframes floating { 
+    0% {
+      bottom: 30px
+    }
+    50% {
+      bottom: 45px
+    }
+    100% {
+      bottom: 30px
+    }
+  }
+  @-moz-keyframes floating { 
+    0% {
+      bottom: 30px
+    }
+    50% {
+      bottom: 45px
+    }
+    100% {
+      bottom: 30px
+    }
+  }
+  @-ms-keyframes floating { 
+    0% {
+      bottom: 30px
+    }
+    50% {
+      bottom: 45px
+    }
+    100% {
+      bottom: 30px
+    }
+  }
+  @-o-keyframes floating { 
+    0% {
+      bottom: 30px
+    }
+    50% {
+      bottom: 45px
+    }
+    100% {
+      bottom: 30px
+    }
+  }
+  @keyframes floating { 
+    0% {
+      bottom: 30px
+    }
+    50% {
+      bottom: 45px
+    }
+    100% {
+      bottom: 30px
+    }
+  }
+
+  h2.section-title {
+    margin: 0 0 20px;
+  }
+
+  input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  height: 44px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  border: 0;
+  color: #848484;
+  border: 2px solid rgba(255,255,255,0.4);
+  background: none;
+  resize: none;
+  vertical-align: middle;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+img.icon.hubsicon {
+  width: 40px;
+  display: inline-block;
+  transform: scale(1.5);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.box p {
+    color: #e0e0e0;
+    font-size: x-large;
+  }
+  
+  .ver-spacer {
+    clear: both;
+    width: 100%;
+    height: 30px;
+  }
+  
+  textarea.text-area {
+    height: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    min-height: 224px;
+    resize: vertical;
+  }
+  .contact-list i {
+    font-size: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: #66FCF1;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+  }
+  
+  .contact-list {
+    text-align: center;
+  }
+  
+  .contact-list a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  .contact-list a:hover {
+    color: #66FCF1 !important;
+  }
+  .other-sections-wrapper section {
+    margin-top: 80px;
+  }
+  .box {
+    padding: 40px;
+    background:#181818;
+    color:#fff;
+    border-radius: 10px;
+  }
+  
+  section .box {
+    padding: 50px;
+  }
+
+  .custom-logo {
+    margin: 30px 0 70px;
+  }
+  
+div#filters-container {
+  margin: 0 0 25px;
+}
+.row.cm-author-detail {
+  margin-bottom: 40px;
+}
+
+@media (max-width:1024px) {
+  .custom-logo {
+    margin: 25px 0 70px;
+  }
+
+
+  section#footer > .box {
+    margin-bottom: 80px;
+  }
+
+  .cm-site-wrapper-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section#home .cm-section-header .arrow.smooth > a{
+  margin-bottom: -50px;
+  }
+.box p{
+  font-size: medium;
+}
+}
+
+p.copyright-content {
+  margin: 0;
+  line-height: 26px;
+}
+
+a.btn.responsive-menu {
+  display: none;
+}
+
+@media (max-width:479px) {
+  .cm-portfolio-item {
+    width: 100% !important;
+  }
+
+  .other-sections-wrapper section {
+    margin-top: 40px;
+  }
+
+  section .box {
+    padding: 30px 15px;
+  }
+
+  section#home .page-center {
+    min-height: 350px;
+    padding-top: 60px;
+  }
+
+  section#home h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
 }
