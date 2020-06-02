@@ -25,7 +25,7 @@
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
@@ -225,7 +225,7 @@
                                             </div>
                                             <div class="cm-portfolio-item development">
                                                 <a href="#" class="modal-trigger" data-modal="restful">
-                                                    <img src="./img/images/restful.PNG" alt="Restful API">
+                                                    <img src="./img/images/restful.png" alt="Restful API">
                                                 </a>
                                                 <h3>Shop API</h3>
                                                 <h5 style="color: #66FCF1 !important;">RESTful API</h5>
@@ -235,8 +235,8 @@
                                                 <div class="cm-btn active">Postman</div>
                                             </div>
                                             <div class="cm-portfolio-item development">
-                                                <a href="#">
-                                                    <img src="./img/images/events.PNG" alt="Events APP">
+                                                <a href="#" class="modal-trigger" data-modal="event">
+                                                    <img src="./img/images/events.png" alt="Events APP">
                                                 </a>
                                                 <h3>Event Booking</h3>
                                                 <h5 style="color: #66FCF1 !important;">Angular</h5>
@@ -245,7 +245,7 @@
                                                 <div class="cm-btn active">Bootstrap4</div>
                                             </div>
                                             <div class="cm-portfolio-item development">
-                                                <a href="#">
+                                                <a href="#" class="modal-trigger" data-modal="pt">
                                                     <img src="./img/images/pt.gif" alt="Persona Trainer">
                                                 </a>
                                                 <h3>Personal Trainer</h3>
@@ -255,7 +255,7 @@
                                                 <div class="cm-btn active">Bootstrap4</div>
                                             </div>
                                             <div class="cm-portfolio-item development">
-                                                <a href="#">
+                                                <a href="#" class="modal-trigger" data-modal="search">
                                                     <img src="./img/images/phonegap.PNG" alt="Movie search APP">
                                                 </a>
                                                 <h3>Movie Search</h3>
@@ -269,17 +269,21 @@
                                                 <div class="cm-btn active">API</div>
                                             </div>
                                             <div class="cm-portfolio-item automation">
-                                                <a href="#">
+                                                <a href="#" class="modal-trigger" data-modal="registration">
                                                     <img src="./img/images/selenium.jpg" alt="Selenium Script">
                                                 </a>
-                                                <h3>Movie Search</h3>
+                                                <h3>User Registration</h3>
                                                 <h5 style="color: #66FCF1 !important;">Selenium/Cucumber</h5>
                                                 <div class="cm-btn active">Selenium</div>
                                                 <div class="cm-btn active">Gherkin</div>
+                                                <div class="cm-btn active">BBD</div>
+                                                <div class="cm-btn active">Maven</div>
+                                                <div class="cm-btn active">JUnit</div>
+                                                <div class="cm-btn active">Extent Reports</div>
                                             </div>
                                             <div class="cm-portfolio-item automation">
-                                                <a href="#">
-                                                    <img src="./img/images/cypress.png" alt="Cpyress Script">
+
+                                                <img src="./img/images/coming-soon5.png" alt="comming">
                                                 </a>
                                                 <h3>Movie Search</h3>
                                                 <h5 style="color: #66FCF1 !important;">Cypress.io/Cucumber</h5>
@@ -333,8 +337,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Weather APP Modal -->
-                        <div class="modal" id="weather">
+                        <!--RestFul API Modal -->
+                        <div class="modal" id="restful">
                             <div class="modal-sandbox"></div>
                             <div class="modal-box">
                                 <div class="modal-header">
@@ -375,8 +379,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Shop API Modal -->
-                        <div class="modal" id="restful">
+                        <!--Event APP Modal -->
+                        <div class="modal" id="event">
                             <div class="modal-sandbox"></div>
                             <div class="modal-box">
                                 <div class="modal-header">
@@ -418,6 +422,136 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Personal Trainer Modal -->
+                        <div class="modal" id="pt">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h1>Shop RESTful API</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/restful.PNG" alt="Shop rest api">
+                                    <p>Shop Restful api that is build on Node.js.
+                                        <br>Connected to mangoDB and host on Heroku
+                                    </p>
+                                    <p>
+                                    <h2>Features</h2>
+                                    <ul>
+                                        <li>Basci Auth</li>
+                                        <li>Bcrypt to hash passwords. </li>
+                                        <li>Create, edit, and delete product</li>
+                                        <li>Create, edit, and delete order</li>
+                                        <li>Create and delete users</li>
+                                    </ul>
+                                    </p>
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Node.js</div>
+                                    <div class="cm-btn active">Express</div>
+                                    <div class="cm-btn active">MangoDB</div>
+                                    <div class="cm-btn active">Heroku</div>
+                                    <div class="cm-btn active">Postman</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://restful-shop-api.herokuapp.com/products">
+                                            <i class="far fa-eye"></i> Demo
+                                        </a>
+                                    </button>
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Restful-API-Shop">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Search APP Modal -->
+                        <div class="modal" id="search">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h1>Shop RESTful API</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/restful.PNG" alt="Shop rest api">
+                                    <p>Shop Restful api that is build on Node.js.
+                                        <br>Connected to mangoDB and host on Heroku
+                                    </p>
+                                    <p>
+                                    <h2>Features</h2>
+                                    <ul>
+                                        <li>Basci Auth</li>
+                                        <li>Bcrypt to hash passwords. </li>
+                                        <li>Create, edit, and delete product</li>
+                                        <li>Create, edit, and delete order</li>
+                                        <li>Create and delete users</li>
+                                    </ul>
+                                    </p>
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Node.js</div>
+                                    <div class="cm-btn active">Express</div>
+                                    <div class="cm-btn active">MangoDB</div>
+                                    <div class="cm-btn active">Heroku</div>
+                                    <div class="cm-btn active">Postman</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://restful-shop-api.herokuapp.com/products">
+                                            <i class="far fa-eye"></i> Demo
+                                        </a>
+                                    </button>
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Restful-API-Shop">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Registration Modal -->
+                        <div class="modal" id="registration">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h1>Shop RESTful API</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/restful.PNG" alt="Shop rest api">
+                                    <p>Shop Restful api that is build on Node.js.
+                                        <br>Connected to mangoDB and host on Heroku
+                                    </p>
+                                    <p>
+                                    <h2>Features</h2>
+                                    <ul>
+                                        <li>Basci Auth</li>
+                                        <li>Bcrypt to hash passwords. </li>
+                                        <li>Create, edit, and delete product</li>
+                                        <li>Create, edit, and delete order</li>
+                                        <li>Create and delete users</li>
+                                    </ul>
+                                    </p>
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Node.js</div>
+                                    <div class="cm-btn active">Express</div>
+                                    <div class="cm-btn active">MangoDB</div>
+                                    <div class="cm-btn active">Heroku</div>
+                                    <div class="cm-btn active">Postman</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://restful-shop-api.herokuapp.com/products">
+                                            <i class="far fa-eye"></i> Demo
+                                        </a>
+                                    </button>
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Restful-API-Shop">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                         <section id="contact">
                             <div class="box">
                                 <h2 class="section-title">Get in Touch with Me</h2>
