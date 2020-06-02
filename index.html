@@ -25,7 +25,7 @@
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
@@ -234,40 +234,6 @@
                                                 <div class="cm-btn active">MangoDB</div>
                                                 <div class="cm-btn active">Postman</div>
                                             </div>
-                                            <div class="cm-portfolio-item development">
-                                                <a href="#" class="modal-trigger" data-modal="event">
-                                                    <img src="./img/images/events.png" alt="Events APP">
-                                                </a>
-                                                <h3>Event Booking</h3>
-                                                <h5 style="color: #66FCF1 !important;">Angular</h5>
-                                                <div class="cm-btn active">HTML/CSS</div>
-                                                <div class="cm-btn active">TypeScript</div>
-                                                <div class="cm-btn active">Bootstrap4</div>
-                                            </div>
-                                            <div class="cm-portfolio-item development">
-                                                <a href="#" class="modal-trigger" data-modal="pt">
-                                                    <img src="./img/images/pt.gif" alt="Persona Trainer">
-                                                </a>
-                                                <h3>Personal Trainer</h3>
-                                                <h5 style="color: #66FCF1 !important;">JavaScript/SCSS</h5>
-                                                <div class="cm-btn active">HTML/SCSS</div>
-                                                <div class="cm-btn active">JavaScript</div>
-                                                <div class="cm-btn active">Bootstrap4</div>
-                                            </div>
-                                            <div class="cm-portfolio-item development">
-                                                <a href="#" class="modal-trigger" data-modal="search">
-                                                    <img src="./img/images/phonegap.PNG" alt="Movie search APP">
-                                                </a>
-                                                <h3>Movie Search</h3>
-                                                <h5 style="color: #66FCF1 !important;">Hybrid App</h5>
-                                                <div class="cm-btn active">HTML/CSS</div>
-                                                <div class="cm-btn active">JavaScript</div>
-                                                <div class="cm-btn active">PhoneGap</div>
-                                                <div class="cm-btn active">Cordova</div>
-                                                <div class="cm-btn active">Framework7</div>
-                                                <div class="cm-btn active">Postman</div>
-                                                <div class="cm-btn active">API</div>
-                                            </div>
                                             <div class="cm-portfolio-item automation">
                                                 <a href="#" class="modal-trigger" data-modal="registration">
                                                     <img src="./img/images/selenium.jpg" alt="Selenium Script">
@@ -281,8 +247,40 @@
                                                 <div class="cm-btn active">JUnit</div>
                                                 <div class="cm-btn active">Extent Reports</div>
                                             </div>
-                                            <div class="cm-portfolio-item automation">
+                                            <div class="cm-portfolio-item development">
+                                                <img src="./img/images/events.png" alt="Events APP">
+                                                </a>
+                                                <h3>Event Booking</h3>
+                                                <h5 style="color: #66FCF1 !important;">Angular</h5>
+                                                <div class="cm-btn active">HTML/CSS</div>
+                                                <div class="cm-btn active">TypeScript</div>
+                                                <div class="cm-btn active">Bootstrap4</div>
+                                            </div>
+                                            <div class="cm-portfolio-item development">
+                                                <img src="./img/images/pt.gif" alt="Persona Trainer">
+                                                </a>
+                                                <h3>Personal Trainer</h3>
+                                                <h5 style="color: #66FCF1 !important;">JavaScript/SCSS</h5>
+                                                <div class="cm-btn active">HTML/SCSS</div>
+                                                <div class="cm-btn active">JavaScript</div>
+                                                <div class="cm-btn active">Bootstrap4</div>
+                                            </div>
 
+                                            <div class="cm-portfolio-item development">
+                                                <img src="./img/images/phonegap.PNG" alt="Movie search APP">
+                                                </a>
+                                                <h3>Movie Search</h3>
+                                                <h5 style="color: #66FCF1 !important;">Hybrid App</h5>
+                                                <div class="cm-btn active">HTML/CSS</div>
+                                                <div class="cm-btn active">JavaScript</div>
+                                                <div class="cm-btn active">PhoneGap</div>
+                                                <div class="cm-btn active">Cordova</div>
+                                                <div class="cm-btn active">Framework7</div>
+                                                <div class="cm-btn active">Postman</div>
+                                                <div class="cm-btn active">API</div>
+                                            </div>
+
+                                            <div class="cm-portfolio-item automation">
                                                 <img src="./img/images/coming-soon5.png" alt="comming">
                                                 </a>
                                                 <h3>Movie Search</h3>
@@ -343,36 +341,43 @@
                             <div class="modal-box">
                                 <div class="modal-header">
                                     <div class="close-modal">&#10006;</div>
-                                    <h1>Weather App</h1>
+                                    <h1>Shop RESTful API</h1>
                                 </div>
                                 <div class="modal-body">
                                     <img src="./img/images/weather.PNG" alt="Weather APP">
-                                    <p>This app fetches weather data based on your location.
-                                        <br>It uses http://openweathermap.org/ API
+                                    <p>This is RESTful api that manages Products and Orders
+                                        <br>Your is able to login by creating credentails via Basic Auth
+                                        <br>Only log in users can access POST,UPDATE and DELETE methods
                                     </p>
                                     <p>
                                     <h2>Features</h2>
                                     <ul>
-                                        <li>Geolocation</li>
-                                        <li>Modern Icon using https://erikflowers.github.io/weather-icons/</li>
-                                        <li>Wind direction</li>
-                                        <li>Daylight calculation</li>
+                                        <li>POST Method</li>
+                                        <li>GET Method</li>
+                                        <li>UPDATE Method</li>
+                                        <li>DELETE Method</li>
+                                        <li>Basic Auth</li>
+
                                     </ul>
                                     </p>
                                     <p>TECHNOLOGIES USED:</p>
-                                    <div class="cm-btn active">HTML/SCSS</div>
-                                    <div class="cm-btn active">JavaScript</div>
-                                    <div class="cm-btn active">REST</div>
-                                    <div class="cm-btn active">Postman</div>
+                                    <div class="cm-btn active">Node.js</div>
                                     <div class="cm-btn active">Heroku</div>
+                                    <div class="cm-btn active">Express.js</div>
+                                    <div class="cm-btn active">Morgan</div>
+                                    <div class="cm-btn active">Mongoose</div>
+                                    <div class="cm-btn active">Multer</div>
+                                    <div class="cm-btn active">Bcrypt</div>
+                                    <div class="cm-btn active">Jsonwebtoken</div>
+
                                     <br />
                                     <button class="close-modal btn btn-aqua">
-                                        <a href="https://weather-app-checker.netlify.app/">
+                                        <a href="https://restful-shop-api.herokuapp.com/products">
                                             <i class="far fa-eye"></i> Demo
                                         </a>
                                     </button>
                                     <button class="close-modal btn btn-aqua">
-                                        <a href="https://github.com/pirasanthan-jesugeevegan/Weather-App">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Restful-API-Shop">
                                             <i class="fab fa-github"></i> Code
                                         </a>
                                     </button>
@@ -514,29 +519,35 @@
                             <div class="modal-box">
                                 <div class="modal-header">
                                     <div class="close-modal">&#10006;</div>
-                                    <h1>Shop RESTful API</h1>
+                                    <h1>User Registration</h1>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="./img/images/restful.PNG" alt="Shop rest api">
-                                    <p>Shop Restful api that is build on Node.js.
-                                        <br>Connected to mangoDB and host on Heroku
+                                    <img src="./img/images/reg.png" alt="Shop rest api">
+                                    <p>Using Selenium and Cucumber to perform regression test on user registration
+                                    <p>Positive and Nagative testing were covered, extent report produced</p>
                                     </p>
                                     <p>
-                                    <h2>Features</h2>
+                                    <h2>Test Scenario</h2>
                                     <ul>
-                                        <li>Basci Auth</li>
-                                        <li>Bcrypt to hash passwords. </li>
-                                        <li>Create, edit, and delete product</li>
-                                        <li>Create, edit, and delete order</li>
-                                        <li>Create and delete users</li>
+                                        <li>Postive Scenario</li>
+                                        <ul>
+                                            <li>Test Case 1 - Automate User Registration Process</li>
+                                        </ul>
+                                        <li>Negitave Scenario</li>
+                                        <ul>
+                                            <li>Test Case 2 - Verify invalid email address error.</li>
+                                            <li>Test Case 3 - Verify error messages for mandatory fields.</li>
+                                            <li>Test Case 4 - Verify error messages for entering incorrect values in
+                                                fields.</li>
+                                        </ul>
                                     </ul>
                                     </p>
                                     <p>TECHNOLOGIES USED:</p>
-                                    <div class="cm-btn active">Node.js</div>
-                                    <div class="cm-btn active">Express</div>
-                                    <div class="cm-btn active">MangoDB</div>
-                                    <div class="cm-btn active">Heroku</div>
-                                    <div class="cm-btn active">Postman</div>
+                                    <div class="cm-btn active">Selenium WebDriver</div>
+                                    <div class="cm-btn active">Gherkin</div>
+                                    <div class="cm-btn active">JUnit</div>
+                                    <div class="cm-btn active">Extent Reports</div>
+                                    <div class="cm-btn active">BBD</div>
                                     <br />
                                     <button class="close-modal btn btn-aqua">
                                         <a href="https://restful-shop-api.herokuapp.com/products">
@@ -544,7 +555,8 @@
                                         </a>
                                     </button>
                                     <button class="close-modal btn btn-aqua">
-                                        <a href="https://github.com/pirasanthan-jesugeevegan/Restful-API-Shop">
+                                        <a
+                                            href="https://github.com/pirasanthan-jesugeevegan/User-Registration-Selenium">
                                             <i class="fab fa-github"></i> Code
                                         </a>
                                     </button>
@@ -585,8 +597,8 @@
             </div>
         </div>
     </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/box-model.js"></script>
 </body>
-<script src="/js/main.js"></script>
-<script src="/js/box-model.js"></script>
 
 </html>
