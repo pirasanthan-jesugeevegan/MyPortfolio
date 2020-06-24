@@ -50,13 +50,6 @@ $(document).ready(function () {
         }
     });
 
-    var $grid = $(".cm-portfolio-listing").isotope({
-        itemSelector: ".cm-portfolio-item",
-        percentPosition: true,
-        masonry: {
-            gutter: 15
-        }
-    });
 
 
     $(window).resize(function () {
@@ -83,10 +76,20 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    $(window).load(function () {
+    $(window).on('load', function () {
         setTimeout(function () {
             $('.cm-btn[data-filter="*"]').trigger("click");
         }, 250);
+        var $grid = $(".cm-portfolio-listing").isotope({
+            itemSelector: ".cm-portfolio-item",
+            percentPosition: true,
+            masonry: {
+                gutter: 15
+            }
+        });
+        $grid.imagesLoaded().progress(function () {
+            $grid.isotope('layout');
+        });
     });
 });
 
