@@ -205,6 +205,7 @@ div#filters-container {
 }
 
 @media (max-width:1024px) {
+  
   .custom-logo {
     margin: 25px 0 70px;
   }
@@ -236,7 +237,7 @@ a.btn.responsive-menu {
 
 @media (max-width:479px) {
   
-    
+  
   .cm-portfolio-item {
     width: 100% !important;
   }
@@ -263,11 +264,19 @@ a.btn.responsive-menu {
   }
   .fixed-action-btn {
 
-  bottom: 89px;
+  bottom: 104px;
   }
 }
 @media (min-width:479px) {
+  
 .floatRight {
   float: right;
-    }
+    } 
+    
   }
+
+  @media (max-width:479px) {
+  .navigation-header{
+    display: none !important;
+  } 
+}

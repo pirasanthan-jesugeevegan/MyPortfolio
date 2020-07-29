@@ -223,13 +223,19 @@ a.btn.responsive-menu {
     font-size: 18px !important;
   }
   .fixed-action-btn {
-    bottom: 89px;
+    bottom: 104px;
   }
 }
 
 @media (min-width: 479px) {
   .floatRight {
     float: right;
+  }
+}
+
+@media (max-width: 479px) {
+  .navigation-header {
+    display: none !important;
   }
 }
 
@@ -558,13 +564,19 @@ a.btn.responsive-menu {
     font-size: 18px !important;
   }
   .fixed-action-btn {
-    bottom: 89px;
+    bottom: 104px;
   }
 }
 
 @media (min-width: 479px) {
   .floatRight {
     float: right;
+  }
+}
+
+@media (max-width: 479px) {
+  .navigation-header {
+    display: none !important;
   }
 }
 
