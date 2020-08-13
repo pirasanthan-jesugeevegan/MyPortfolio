@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    //FORM SELECT
+    $('select').formSelect(); // https://materializecss.com/select.html
+    // MODAL
+    $('.modal').modal();
+    // TABS
+    $('ul.tabs').tabs();
+    // SCROLLSPY
+    $('.scrollspy').scrollSpy();
+
+    $('.fixed-action-btn').floatingActionButton();
+
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
@@ -66,33 +77,21 @@ $(document).ready(function () {
 
     });
 
-    // filter items on button click
-    $("#filters-container").on("click", ".cm-btn", function () {
-        var filterValue = $(this).attr("data-filter");
-        $grid.isotope({ filter: filterValue });
-        $(this)
-            .siblings()
-            .removeClass("active");
-        $(this).addClass("active");
-    });
 
-    $(window).on('load', function () {
-        setTimeout(function () {
-            $('.cm-btn[data-filter="*"]').trigger("click");
-        }, 250);
-        var $grid = $(".cm-portfolio-listing").isotope({
-            itemSelector: ".cm-portfolio-item",
-            percentPosition: true,
-            masonry: {
-                gutter: 15
-            }
-        });
-        $grid.imagesLoaded().progress(function () {
-            $grid.isotope('layout');
-        });
-    });
 });
 
 
+// MixItUp 3
+$(function () {
+    $('#Container').mixItUp({
+        load: {
+            // filter: 'all'
+            filter: 'all'
+        },
+        controls: {
+            toggleFilterButtons: false
+        }
+    });
+});
 
 

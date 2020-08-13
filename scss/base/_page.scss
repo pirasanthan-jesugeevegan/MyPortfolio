@@ -194,7 +194,7 @@ fieldset {
   }
 
   .custom-logo {
-    margin: 30px 0 70px;
+    margin: 30px 0 20px;
   }
   
 div#filters-container {
@@ -205,11 +205,11 @@ div#filters-container {
 }
 
 @media (max-width:1024px) {
+  
   .custom-logo {
     margin: 25px 0 70px;
   }
-
-
+  
   section#footer > .box {
     margin-bottom: 80px;
   }
@@ -222,7 +222,7 @@ div#filters-container {
   margin-bottom: -50px;
   }
 .box p{
-  font-size: medium;
+  font-size: large;
 }
 }
 
@@ -236,6 +236,8 @@ a.btn.responsive-menu {
 }
 
 @media (max-width:479px) {
+  
+  
   .cm-portfolio-item {
     width: 100% !important;
   }
@@ -260,5 +262,21 @@ a.btn.responsive-menu {
   section#home .cm-section-header p {
     font-size: 18px !important;
   }
+  .fixed-action-btn {
 
+  bottom: 104px;
+  }
+}
+@media (min-width:479px) {
+  
+.floatRight {
+  float: right;
+    } 
+    
+  }
+
+  @media (max-width:479px) {
+  .navigation-header{
+    display: none !important;
+  } 
 }

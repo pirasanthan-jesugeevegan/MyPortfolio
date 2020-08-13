@@ -14,6 +14,11 @@
 
     <title>Home | Portfolio</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+    <link href="/scss/main.css" type="text/css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167703730-1"></script>
     <script>
@@ -23,29 +28,6 @@
 
         gtag('config', 'UA-167703730-1');
     </script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
-
-    <link href="/scss/main.css" type="text/css" rel="stylesheet">
-    <script>
-        var $grid = $(".cm-portfolio-listing").isotope({
-            itemSelector: ".cm-portfolio-item",
-            percentPosition: true,
-            masonry: {
-                gutter: 15
-            }
-        });
-        $grid.imagesLoaded().progress(function () {
-            $grid.isotope('layout');
-        });
-    </script>
 </head>
 
 <body>
@@ -53,9 +35,11 @@
         <div class="cm-navigation">
             <div class="cm-navigation-inner">
                 <div class="navigation-header">
-                    <a class="btn responsive-menu"><i></i></a>
+                    <a class="btn responsive-menu"></a>
                     <div class="custom-logo">
-                        <a href="index.html"></a>
+                        <a href="index.html">
+                            <img style="width: 50px;" src="./img/images/PJ.png">
+                        </a>
                     </div>
                 </div>
                 <div class="cm-navigation-content">
@@ -89,6 +73,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="#blog" data-hint="Blog">
+
+                                <i class="fa fa-instagram"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="#contact" data-hint="Contact">
                                 <i class="fab fa-wpforms">
                                 </i>
@@ -117,7 +108,7 @@
                     <div class="page-center">
                         <section id="about">
                             <div class="box">
-                                <h2 class="section-title">Who is Behind All This</h2>
+                                <h4 class="section-title">Who is Behind All This</h4>
                                 <div class="row cm-author-detail">
                                     <div class="clearfix">
                                         <div class="span-6 pull-right">
@@ -151,7 +142,7 @@
                         <section id="skills">
                             <div class="box">
                                 <div class="cm-portfolio-wrapper">
-                                    <h2 class="section-title">My Skills & Experience</h2>
+                                    <h4 class="section-title">My Skills & Experience</h4>
                                     <div class="service-listing-wrapper">
                                         <div class="service-listing row clearfix">
                                             <div class="span-4">
@@ -218,92 +209,154 @@
                         <section id="portfolio" class="portfolio">
                             <div class="box">
                                 <div class="cm-portfolio-wrapper">
-                                    <h2 class="section-title pull-left">From My Portfolio</h2>
-                                    <div id="filters-container" class="pull-right">
-                                        <div data-filter="*" class="cm-btn active">All</div>
-                                        <div data-filter=".development" class="cm-btn">Development</div>
-                                        <div data-filter=".automation" class="cm-btn">Automation</div>
-                                    </div>
-                                    <div class="cm-portfolio-listing-wrapper">
-                                        <div class="cm-portfolio-listing">
-                                            <div class="cm-portfolio-item development">
-                                                <a href="#" class="modal-trigger" data-modal="weather">
-                                                    <img src="./img/images/weather.PNG" alt="Weather APP">
-                                                </a>
-                                                <h3>Weather APP</h3>
-                                                <h5 style="color: #66FCF1 !important;"> JavaScript/SCSS</h5>
-                                                <div class="cm-btn active">HTML/SCSS</div>
-                                                <div class="cm-btn active">JavaScript</div>
-                                                <div class="cm-btn active">REST</div>
-                                                <div class="cm-btn active">Postman</div>
-                                                <div class="cm-btn active">Heroku</div>
-                                            </div>
-                                            <div class="cm-portfolio-item development">
-                                                <a href="#" class="modal-trigger" data-modal="restful">
-                                                    <img src="./img/images/restful.PNG" alt="Restful API">
-                                                </a>
-                                                <h3>Shop API</h3>
-                                                <h5 style="color: #66FCF1 !important;">RESTful API</h5>
-                                                <div class="cm-btn active">Node.js</div>
-                                                <div class="cm-btn active">Express</div>
-                                                <div class="cm-btn active">MangoDB</div>
-                                                <div class="cm-btn active">Postman</div>
-                                            </div>
-                                            <div class="cm-portfolio-item automation">
-                                                <a href="#" class="modal-trigger" data-modal="registration">
-                                                    <img src="./img/images/selenium.jpg" alt="Selenium Script">
-                                                </a>
-                                                <h3>User Registration</h3>
-                                                <h5 style="color: #66FCF1 !important;">Selenium/Cucumber</h5>
-                                                <div class="cm-btn active">Selenium</div>
-                                                <div class="cm-btn active">Gherkin</div>
-                                                <div class="cm-btn active">BBD</div>
-                                                <div class="cm-btn active">Maven</div>
-                                                <div class="cm-btn active">JUnit</div>
-                                                <div class="cm-btn active">Extent Reports</div>
-                                            </div>
-                                            <div class="cm-portfolio-item development">
-                                                <img src="./img/images/events.PNG" alt="Events APP">
-
-                                                <h3>Event Booking</h3>
-                                                <h5 style="color: #66FCF1 !important;">Angular</h5>
-                                                <div class="cm-btn active">HTML/CSS</div>
-                                                <div class="cm-btn active">TypeScript</div>
-                                                <div class="cm-btn active">Bootstrap4</div>
-                                            </div>
-                                            <div class="cm-portfolio-item development">
-                                                <img src="./img/images/pt.gif" alt="Persona Trainer">
-
-                                                <h3>Personal Trainer</h3>
-                                                <h5 style="color: #66FCF1 !important;">JavaScript/SCSS</h5>
-                                                <div class="cm-btn active">HTML/SCSS</div>
-                                                <div class="cm-btn active">JavaScript</div>
-                                                <div class="cm-btn active">Bootstrap4</div>
-                                            </div>
-
-                                            <div class="cm-portfolio-item development">
-                                                <img src="./img/images/phonegap.PNG" alt="Movie search APP">
-
-                                                <h3>Movie Search</h3>
-                                                <h5 style="color: #66FCF1 !important;">Hybrid App</h5>
-                                                <div class="cm-btn active">HTML/CSS</div>
-                                                <div class="cm-btn active">JavaScript</div>
-                                                <div class="cm-btn active">PhoneGap</div>
-                                                <div class="cm-btn active">Cordova</div>
-                                                <div class="cm-btn active">Framework7</div>
-                                                <div class="cm-btn active">Postman</div>
-                                                <div class="cm-btn active">API</div>
-                                            </div>
-
-                                            <div class="cm-portfolio-item automation">
-                                                <img src="./img/images/coming-soon5.png" alt="comming">
-
-                                                <h3>Movie Search</h3>
-                                                <h5 style="color: #66FCF1 !important;">Cypress.io/Cucumber</h5>
-                                                <div class="cm-btn active">Cypress.io</div>
-                                                <div class="cm-btn active">Gherkin</div>
+                                    <div class="row">
+                                        <div class="controls">
+                                            <div class="col s12" style="display: grid;">
+                                                <div class="row">
+                                                    <h4 class="section-title pull-left col s12 m6 l6">From My Portfolio
+                                                    </h4>
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <span class="floatRight">
+                                                            <label>Sort:</label>
+                                                            <button href="#!"
+                                                                class="waves-effect waves-light btn-small filter"
+                                                                data-filter="all">All</button>
+                                                            <button href="#!"
+                                                                class="waves-effect waves-light btn-small filter"
+                                                                data-filter=".category-develepment">Dev</button>
+                                                            <button href="#!"
+                                                                class="waves-effect waves-light btn-small filter"
+                                                                data-filter=".category-automation">Automation</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="cm-portfolio-listing-wrapper">
+                                            <div id="Container" class="project-cards-container cm-portfolio-listing">
+                                                <div class="col s12 m6 l4 mix category-develepment">
+                                                    <div class="card modal-trigger" href="#weather">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/weather.PNG">
+                                                        </div>
+                                                        <div class="card-content" style="background-color: black;">
+                                                            <span class="card-title activator">Weather
+                                                                APP</span>
+                                                            <h5 style="color: #66FCF1 !important;"> JavaScript | SCSS
+                                                            </h5>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-automation">
+                                                    <div class="card modal-trigger" href="#login">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/login.png">
+                                                        </div>
+                                                        <div class="card-content" style="background-color: black;">
+                                                            <span class="card-title activator">Login Form</span>
+                                                            <h5 style="color: #66FCF1 !important;"> Cypress | Cucumber
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-develepment">
+                                                    <div class="card modal-trigger" href="#restful">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/shop.png"
+                                                                alt="Restful API">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator ">Shop
+                                                                API</span>
+                                                            <h5 style="color: #66FCF1 !important;">RESTful API</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-automation">
+                                                    <div class="card modal-trigger" href="#registration">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/registration.png"
+                                                                alt="Selenium Script">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator">User
+                                                                Registration Form</span>
+                                                            <h5 style="color: #66FCF1 !important;">Selenium | Cucumber
+                                                            </h5>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-develepment">
+                                                    <div class="card modal-trigger" href="#event">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/event.png"
+                                                                alt="Events APP">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator ">Event Booking</span>
+                                                            <h5 style="color: #66FCF1 !important;">Angular</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-develepment">
+                                                    <div class="card modal-trigger" href="#trainer">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/pt.png"
+                                                                alt="Persona Trainer">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator">Personal Trainer</span>
+                                                            <h5 style="color: #66FCF1 !important;">JavaScript | SCSS
+                                                            </h5>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-develepment">
+                                                    <div class="card modal-trigger" href="#movie">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/phonegap.png"
+                                                                alt="Movie search APP">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator ">Movie Search</span>
+                                                            <h5 style="color: #66FCF1 !important;">Hybrid App</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m6 l4 mix category-automation">
+                                                    <div class="card modal-trigger" href="#ecommerce">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator" src="./img/images/ecommerce.png"
+                                                                alt="Movie search APP">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator ">E-Commerce</span>
+                                                            <h5 style="color: #66FCF1 !important;">Cypress | Cucumber
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section id="blog" class="portfolio">
+                            <div class="box">
+                                <div class="cm-portfolio-wrapper">
+                                    <h4 class="section-title pull-left">Instagram Blog</h4>
+                                    <div class="embedsocial-instagram"
+                                        data-ref="01b866e64d2006f47dbfb4b9cb7a2f0a860fee40"><iframe
+                                            src="https://embedsocial.com/api/pro_album/instagram/01b866e64d2006f47dbfb4b9cb7a2f0a860fee40"
+                                            id="embedIFrame_01b866e64d2006f47dbfb4b9cb7a2f0a860fee40nwm77e"
+                                            class="embedsocial-in-album-iframe" scrolling="no"
+                                            style="width: 0px; height: 1468px; max-height: 100%; max-width: 100%; min-height: 100%; min-width: 100%; border: 0px; overflow: hidden;"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -314,20 +367,20 @@
                             <div class="modal-box">
                                 <div class="modal-header">
                                     <div class="close-modal">&#10006;</div>
-                                    <h1>Weather App</h1>
+                                    <h4>Weather App</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="./img/images/weather.PNG" alt="Weather APP">
+                                    <img src="./img/images/weather.png" alt="Weather APP">
                                     <p>This app fetches weather data based on your location.
                                         <br>It uses http://openweathermap.org/ API
                                     </p>
                                     <p>
-                                    <h2>Features</h2>
+                                    <h5>Features</h5>
                                     <ul>
-                                        <li>Geolocation</li>
-                                        <li>Modern Icon using https://erikflowers.github.io/weather-icons/</li>
-                                        <li>Wind direction</li>
-                                        <li>Daylight calculation</li>
+                                        <li>- Geolocation</li>
+                                        <li>- Modern Icon using https://erikflowers.github.io/weather-icons/</li>
+                                        <li>- Wind direction</li>
+                                        <li>- Daylight calculation</li>
                                     </ul>
 
                                     <p>TECHNOLOGIES USED:</p>
@@ -356,22 +409,22 @@
                             <div class="modal-box">
                                 <div class="modal-header">
                                     <div class="close-modal">&#10006;</div>
-                                    <h1>Shop RESTful API</h1>
+                                    <h4>Shop RESTful API</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="./img/images/restful.PNG" alt="Weather APP">
+                                    <img src="./img/images/shop.png" alt="Restfull API">
                                     <p>This is RESTful api that manages Products and Orders
                                         <br>Your is able to login by creating credentails via Basic Auth
                                         <br>Only log in users can access POST,UPDATE and DELETE methods
                                     </p>
                                     <p>
-                                    <h2>Features</h2>
+                                    <h5>Features</h5>
                                     <ul>
-                                        <li>POST Method</li>
-                                        <li>GET Method</li>
-                                        <li>UPDATE Method</li>
-                                        <li>DELETE Method</li>
-                                        <li>Basic Auth</li>
+                                        <li>- POST Method</li>
+                                        <li>- GET Method</li>
+                                        <li>- UPDATE Method</li>
+                                        <li>- DELETE Method</li>
+                                        <li>- Basic Auth</li>
 
                                     </ul>
 
@@ -399,32 +452,31 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--Registration Modal -->
                         <div class="modal" id="registration">
                             <div class="modal-sandbox"></div>
                             <div class="modal-box">
                                 <div class="modal-header">
                                     <div class="close-modal">&#10006;</div>
-                                    <h1>User Registration</h1>
+                                    <h4>User Registration</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="./img/images/reg.PNG" alt="Shop rest api">
+                                    <img src="./img/images/registration.png" alt="Selenium">
                                     <p>Using Selenium and Cucumber to perform regression test on user registration</p>
                                     <p>Positive and Nagative testing were covered, extent report produced</p>
 
 
-                                    <h2>Test Scenario</h2>
+                                    <h5><b>Test Scenario</b></h5>
                                     <ul>
                                         <li>Postive Scenario</li>
                                         <ul>
-                                            <li>Test Case 1 - Automate User Registration Process</li>
+                                            <li>- Test Case 1 - Automate User Registration Process</li>
                                         </ul>
                                         <li>Negitave Scenario</li>
                                         <ul>
-                                            <li>Test Case 2 - Verify invalid email address error.</li>
-                                            <li>Test Case 3 - Verify error messages for mandatory fields.</li>
-                                            <li>Test Case 4 - Verify error messages for entering incorrect values in
+                                            <li>- Test Case 2 - Verify invalid email address error.</li>
+                                            <li>- Test Case 3 - Verify error messages for mandatory fields.</li>
+                                            <li>- Test Case 4 - Verify error messages for entering incorrect values in
                                                 fields.</li>
                                         </ul>
                                     </ul>
@@ -445,10 +497,191 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal" id="login">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h4>Login Form</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/login.png" alt="Login">
+                                    <p>Using Cypress and Cucumber to perform test on Login Form</p>
+                                    <p>Positive and Nagative testing were covered, extent report produced</p>
+                                    <h5>Test Scenario</h5>
+                                    <ul>
+                                        <li>Postive Scenario</li>
+                                        <ul>
+                                            <li>- Test Case 1 - Verify if a user will be able to login with a valid
+                                                username and valid password</li>
+                                        </ul>
+                                        <li>Negitave Scenario</li>
+                                        <ul>
+                                            <li>- Test Case 2 - Verify that the login screen contains elements such as
+                                                Username, Password, Sign in button, Remember password check box, Forgot
+                                                password link, and Create an account link.</li>
+                                            <li>- Test Case 3 - Verify if a user will be able to login with a invalid
+                                                username and valid password</li>
+                                            <li>- Test Case 4 - Verify if a user cannot login with a valid username and
+                                                an
+                                                invalid password.</li>
+                                            <li>- Test Case 5 - Verify the login page for both, when the field is blank
+                                                and Submit button is clicked.</li>
+                                        </ul>
+                                    </ul>
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Cypress.io</div>
+                                    <div class="cm-btn active">Gherkin</div>
+                                    <div class="cm-btn active">Machawesome</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/cypress_PerlegoLoginForm">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="event">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h4>Event Booking</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/event.png" alt="Events APP">
+                                    <p>This app allows user to create and book events </p>
+                                    <p>
+                                    <h5>Features</h5>
+                                    <ul>
+                                        <li>- Create events </li>
+                                        <li>- Book events</li>
+                                        <li>- Login as admin</li>
+                                        <li>- manage booking</li>
+                                    </ul>
 
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Angular</div>
+                                    <div class="cm-btn active">HTML/SCSS</div>
+                                    <div class="cm-btn active">TypeScript</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Weather-App">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="trainer">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h4>Personal Trainer</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/pt.png" alt="Personal Trainer">
+                                    <p>This is a website I have created for a personal trainer to showcase his class
+                                        timetable, prices and gallary</p>
+                                    <p>
+                                    <h5>Features</h5>
+                                    <ul>
+                                        <li>- Responsive</li>
+                                        <li>- Price card</li>
+                                        <li>- Gallary</li>
+                                        <li>- CSS timetable</li>
+                                    </ul>
+
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">HTML/SCSS</div>
+                                    <div class="cm-btn active">JavaScript</div>
+                                    <div class="cm-btn active">Bootstrap 4</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/PT-Website-client">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="movie">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h4>Movie Search</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/phonegap.png" alt="Movie Search">
+                                    <p>This application was created on phonegap/cordova to demonstrate hypbrid apps.
+                                        This application allow users to search movie on the http://www.omdbapi.com/
+                                    </p>
+                                    <p>
+                                    <h5>Features</h5>
+                                    <ul>
+                                        <li>- Search movie</li>
+                                        <li>- Native</li>
+                                        <li>- Responsive</li>
+
+                                    </ul>
+
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">HTML/SCSS</div>
+                                    <div class="cm-btn active">JavaScript</div>
+                                    <div class="cm-btn active">Framework7</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Phonegap-Search-App">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="ecommerce">
+                            <div class="modal-sandbox"></div>
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <h4>E-Commerce</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/images/ecommerce.png" alt="E-commerce">
+                                    <p>Using Cypress and Cucumber to perform test on E-commerce</p>
+                                    <p>Positive and Nagative testing were covered, extent report produced</p>
+                                    <h5>Test Scenario</h5>
+                                    <ul>
+                                        <li>Postive Scenario</li>
+                                        <ul>
+                                            <li>- Test Case 1 - Automate End to End Buy Order functionality</li>
+                                        </ul>
+                                        <li>Negitave Scenario</li>
+                                        <ul>
+                                            <li>- Test Case 2 - Verify that 'Add to Wishlist' only works after login.
+                                            </li>
+                                            <li>- Test Case 3 - Verify that Total Price is reflecting correctly if user
+                                                changes quantity on 'Shopping Cart Summary' Page.</li>
+                                        </ul>
+                                    </ul>
+                                    <p>TECHNOLOGIES USED:</p>
+                                    <div class="cm-btn active">Cypress.io</div>
+                                    <div class="cm-btn active">Gherkin</div>
+                                    <div class="cm-btn active">Machawesome</div>
+                                    <br />
+                                    <button class="close-modal btn btn-aqua">
+                                        <a href="https://github.com/pirasanthan-jesugeevegan/Buy-Product-E-commerce">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <section id="contact">
                             <div class="box">
-                                <h2 class="section-title">Get in Touch with Me</h2>
+                                <h4 class="section-title">Get in Touch with Me</h4>
                                 <div class="ver-spacer"></div>
                                 <div class="row contact-list clearfix">
                                     <div class="span-3">
@@ -472,13 +705,32 @@
                                 </div>
                             </div>
                         </section>
+
+                        <div class="fixed-action-btn ">
+                            <a class="btn-floating btn-large pulse hoverable" style="background-color: #66FCF1;"
+                                href="http://pirasanth.com/Pirasanthan_Jesugeevegan_CV.pdf">
+                                <i href="http://pirasanth.com/Pirasanthan_Jesugeevegan_CV.pdf" class="fa fa-file-text"
+                                    style="color: black;bottom: 6px;
+                                    position: relative;"></i>
+                                <span style="position: relative;bottom: 42px;color: black;">CV</span>
+                            </a>
+                        </div>
                         <section id="footer" style="margin-bottom: 100px;">
+                            <p class="center-align" style="color: white;"> <img style="width: 50px;"
+                                    src="./img/images/PJ.png">PIRASANTHAN JESUGEEVEGAN <span style="color:#66FCF1;">@
+                                    2019</span>
+                            </p>
                         </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/box-model.js"></script>
 </body>
