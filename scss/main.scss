@@ -1,22 +1,22 @@
 @import url('//use.fontawesome.com/releases/v5.0.0/css/all.css');
 // Core variables and mixins
-@import "./base/mixins";
-@import "./base/page";
-@import "./base/variables";
-@import "./base/grid";
+@import './base/mixins';
+@import './base/page';
+@import './base/variables';
+@import './base/grid';
 
 // Global CSS
-@import "base/page";
+@import 'base/page';
 
 // Components
-@import "./components/buttons";
-@import "./components/navbar";
-@import "./components/box-model";
-@import "./components/filter";
+@import './components/buttons';
+@import './components/navbar';
+@import './components/box-model';
+@import './components/filter';
+@import './components/card';
 // Layout
-@import "./layout/home";
-@import "./layout/footer";
-@import "./layout/modelBox";
-@import "./layout/projects";
-@import "./layout/social";
-
+@import './layout/home';
+@import './layout/footer';
+@import './layout/modelBox';
+@import './layout/projects';
+@import './layout/social';

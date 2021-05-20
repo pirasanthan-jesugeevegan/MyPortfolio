@@ -1,50 +1,50 @@
 section#home h1 {
-    color: #ffff;
-    font-size: 40px;
-    text-align: center;
-    margin: 0px;
-  }
-  
-  section#home .page-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px;
-    flex-flow: wrap;
-    text-align: center;
-    position: relative;
-  }
-  
-  section#home .cm-section-header {
-    text-align: center;
-    width: 100%;
-  }
-  
-  section#home .cm-section-header p {
-    
-    font-style: italic;
-    color: #FFF;
-    font-size: 20px;
-    margin: 0 0 10px;
-    
-  }
-  
-  section#home .cm-section-header .arrow.smooth > a {
-    position: absolute;
-    visibility: visible;
-    z-index: 9;
-    left: 50%;
-    font-size: 30px;
-    margin-left: -15px;
-    -webkit-animation: floating 2s infinite linear;
-    -moz-animation: floating 2s infinite linear;
-    -ms-animation: floating 2s infinite linear;
-    -o-animation: floating 2s infinite linear;
-    color: #FFF;
-    bottom: 10px;
-    font-weight: normal;
-  }
-  
-  section#home .cm-section-header .arrow.smooth > a i {
-    font-weight: 900;
-  }
+  color: #ffff;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+section#home .page-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  flex-flow: wrap;
+  text-align: center;
+  position: relative;
+}
+
+section#home .cm-section-header {
+  text-align: center;
+  width: 100%;
+  padding-right: 10px;
+}
+
+section#home .cm-section-header p {
+  font-style: italic;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 10px;
+  padding-right: 10px;
+}
+
+section#home .cm-section-header .arrow.smooth > a {
+  position: absolute;
+  visibility: visible;
+  z-index: 9;
+  left: 50%;
+  font-size: 30px;
+  margin-left: -15px;
+  -webkit-animation: floating 2s infinite linear;
+  -moz-animation: floating 2s infinite linear;
+  -ms-animation: floating 2s infinite linear;
+  -o-animation: floating 2s infinite linear;
+  color: #fff;
+  bottom: 10px;
+  font-weight: normal;
+}
+
+section#home .cm-section-header .arrow.smooth > a i {
+  font-weight: 900;
+}
