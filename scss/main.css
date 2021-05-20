@@ -589,12 +589,6 @@ a.btn.responsive-menu {
   font-size: 1rem;
 }
 
-.btn:hover {
-  cursor: pointer;
-  border: 2px solid #66FCF1;
-  color: #66FCF1 !important;
-}
-
 ul.nav.navbar-nav {
   padding-left: 0;
   margin: 0;
