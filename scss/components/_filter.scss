@@ -1,38 +1,84 @@
 #sorting-row {
-	padding-top:0px;
-	@media only screen and (max-width: 992px) {
-		padding-top:46px;
-	}
+  padding-top: 0px;
+  @media only screen and (max-width: 992px) {
+    padding-top: 46px;
+  }
 }
 .lazyload {
   opacity: 0;
 }
 .lazyloading {
-  opacity: 1;
   transition: 600ms opacity;
-  background: #f7f7f7 url(https://afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+  background: #f7f7f7
+    url(https://afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat
+    center;
   min-height: 60px;
 }
-#Container .mix{
-    display: none;
+#Container .mix {
+  display: none;
 }
 .project-cards-container {
-	-webkit-backface-visibility: hidden;
-	.mix {
+  -webkit-backface-visibility: hidden;
+  .mix {
     display: inline-block;
   }
 }
-.card-content{
+.card-content {
   background-color: black;
 }
-.filter{
-  background-color: #66FCF1;
+.filter {
+  background-color: #66fcf1;
   color: black;
-    font-weight: bolder;
+  font-weight: bolder;
 }
 // CUSTOM CARD BADGES
-.card-image {.card-badge {position:absolute;top:-5px;right:-24px;width:0;height:0;transform:rotate(45deg);border-left:36px solid transparent;border-right:  36px solid transparent;&.new {border-bottom: 36px solid rgba(255, 165, 0, 1);}&.certified {border-bottom: 36px solid #00c853;}&.fav {border-bottom: 36px solid rgba(244, 67, 55, 1);}.material-icons {color: #fff;position: absolute;right:-12px;top: 9px;transform: rotate(-45deg);}}}
+.card-image {
+  .card-badge {
+    position: absolute;
+    top: -5px;
+    right: -24px;
+    width: 0;
+    height: 0;
+    transform: rotate(45deg);
+    border-left: 36px solid transparent;
+    border-right: 36px solid transparent;
+    &.new {
+      border-bottom: 36px solid rgba(255, 165, 0, 1);
+    }
+    &.certified {
+      border-bottom: 36px solid #00c853;
+    }
+    &.fav {
+      border-bottom: 36px solid rgba(244, 67, 55, 1);
+    }
+    .material-icons {
+      color: #fff;
+      position: absolute;
+      right: -12px;
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+  }
+}
 // CARD IMAGE OPACITY ON HOVER
-.card-image {background-color: #555;img {opacity:0.8;transition: opacity 0.5s ease;}&:hover{img {opacity:1;transition: opacity 0.5s ease;}}}
+.card-image {
+  background-color: #555;
+  img {
+    opacity: 10;
+    transition: opacity 0.5s ease;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+      transition: opacity 0.5s ease;
+    }
+  }
+}
 // CARD SHADOW ON HOVER
-.card {&:hover {box-shadow: 0 16px 24px 2px rgba(102, 252, 241, 0.14), 0 6px 30px 5px rgba(102, 252, 241, 0.12), 0 8px 10px -7px rgba(102, 252, 241, 0.2);}}
+.card {
+  &:hover {
+    box-shadow: 0 16px 24px 2px rgba(102, 252, 241, 0.14),
+      0 6px 30px 5px rgba(102, 252, 241, 0.12),
+      0 8px 10px -7px rgba(102, 252, 241, 0.2);
+  }
+}
